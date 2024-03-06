@@ -23,6 +23,10 @@ modules:
       - @virtualization
       - rclone
       - kgpg
+      - python3-pip
+      - btop
+      - intel-media-driver
+      - neofetch
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -31,9 +35,9 @@ modules:
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
-    repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-    repo-name: flathub
-    repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      # repo-name: flathub
+      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
     install:
       - com.bitwarden.desktop
       - com.discordapp.Discord
@@ -43,7 +47,6 @@ modules:
       - io.freetubeapp.FreeTube
       - io.github.mimbrero.WhatsAppDesktop
       - io.mpv.Mpv
-      - org.kde.kid3
       - org.kde.kontact
       - org.kde.tokodon
       - org.kde.yakuake
