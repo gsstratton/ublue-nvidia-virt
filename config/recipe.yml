@@ -46,7 +46,7 @@ modules:
       # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
-        install:
+    install:
       - com.github.Eloston.UngoogledChromium
       - flatpak install flathub org.mozilla.firefox
       - one.ablaze.floorp
