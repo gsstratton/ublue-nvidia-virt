@@ -1,5 +1,5 @@
 ublue_variants:
-  - label: blue-build/template
+  - label: gsstratton/ublue-nvidia-virt
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: blue-build/template
+      - label: ublue-nvidia-virt
