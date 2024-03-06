@@ -31,7 +31,7 @@ modules:
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
-
+  
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -39,20 +39,13 @@ modules:
       # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
-    install:
-      - com.bitwarden.desktop
-      - com.discordapp.Discord
+        install:
       - com.github.Eloston.UngoogledChromium
       - com.github.tchx84.Flatseal
       - com.vivaldi.Vivaldi
-      - io.freetubeapp.FreeTube
-      - io.github.mimbrero.WhatsAppDesktop
       - io.mpv.Mpv
       - org.kde.kontact
-      - org.kde.tokodon
       - org.kde.yakuake
-      - org.musicbrainz.Picard
-      - org.signal.Signal
       - org.strawberrymusicplayer.strawberry
       # - org.gnome.Loupe
       # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
@@ -61,5 +54,15 @@ modules:
       # Installing different branches of the same Flatpak is not supported.
     remove:
         # - org.gnome.eog
+    user:
+     install:
+      - com.bitwarden.desktop
+      - com.discordapp.Discord
+      - io.freetubeapp.FreeTube
+      - io.github.mimbrero.WhatsAppDesktop
+      - org.kde.tokodon
+      - org.musicbrainz.Picard
+      - org.signal.Signal
+     remove:
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
