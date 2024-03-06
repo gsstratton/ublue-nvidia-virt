@@ -1,11 +1,11 @@
 # image will be published to ghcr.io/<user>/<name>
 name: ublue-nvidia-virt
 # description will be included in the image's metadata
-description: Universal Blue with Nvidia and @virtualization installed
+description: Universal Blue with Nvidia and libvirt installed
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-nvidia
-image-version: 39 # latest is also supported if you want new updates ASAP
+image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
