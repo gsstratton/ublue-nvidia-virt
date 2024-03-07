@@ -20,8 +20,6 @@ modules:
   - type: rpm-ostree
     repos: # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      - akmod-nvidia
-      - xorg-x11-drv-nvidia-cuda
       - libvirt
       - virt-manager
       - wine
@@ -30,6 +28,7 @@ modules:
       - kgpg
       - python3-pip
       - btop
+      - intel-media-driver
       - mpv
       - strawberry
       - yakuake
