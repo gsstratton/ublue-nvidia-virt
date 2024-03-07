@@ -31,7 +31,6 @@ modules:
       - mpv
       - strawberry
       - yakuake
-      - intel-media-driver
       - neofetch
       - wget
       - curl
@@ -47,13 +46,6 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
     install:
-      - com.github.Eloston.UngoogledChromium
-      - flatpak install flathub org.mozilla.firefox
-      - one.ablaze.floorp
-      - com.microsoft.Edge
-      - com.vivaldi.Vivaldi
-      - com.github.tchx84.Flatseal
-      - org.kde.kontact
       # - org.gnome.Loupe
       # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
@@ -71,6 +63,13 @@ modules:
       - org.musicbrainz.Picard
       - org.signal.Signal
       - io.github.unknownskl.greenlight
+      - com.github.Eloston.UngoogledChromium
+      - flatpak install flathub org.mozilla.firefox
+      - one.ablaze.floorp
+      - com.microsoft.Edge
+      - com.vivaldi.Vivaldi
+      - com.github.tchx84.Flatseal
+      - org.kde.kontact      
      remove:
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
